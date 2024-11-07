@@ -1,0 +1,379 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Rakkas&family=Raleway:ital,wght@0,100..900;1,100..900&family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Rakkas&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.vast-shadow-regular {
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.rakkas-regular {
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+}
+header{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+header video{
+    z-index: 0;
+    position: absolute;
+    height: 100vh;
+    object-fit: cover;
+}
+header nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    height: 120px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img {
+    width: 110px;
+    height: 120px;
+}
+nav a {
+    color: #ffc400;
+    font-size: 25px;
+    text-decoration: none;
+}
+header .landing{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 110px;
+}
+h1{
+    font-family: "Rakkas", serif;
+    font-size: 60px;
+    color: #ffc400;
+}
+.landing p {
+    font-size: 25px;
+    color: #ffc400;
+}
+header nav:hover{
+    background-color: rgba(0, 0, 0, 0.25)
+}
+header nav {
+    font-family: "Rakkas", serif;
+    z-index: 99;
+    transition: background-color .3s ;
+}
+nav a:hover{
+    transition:background-color .3s ;
+    border-radius: 3px;
+    box-shadow:2px 2px 2px 2px  #ffc400;
+}
+main{
+    height: auto;
+}
+.titre-carte{
+    display: flex;
+    height: 200px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items:center;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='50' height='50' patternTransform='scale(3) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240,6.7%,17.6%,1)'/><path d='M50 25L37.5 50 25 25 37.5 0zm-25 0L12.5 50 0 25 12.5 0z'  stroke-width='1' stroke='hsla(47,80.9%,61%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+}
+.carte{
+    display: flex;
+    flex-wrap: wrap;
+}
+.titre-carte a {
+    font-family: "Rakkas", serif;
+    background-color: rgb(76, 12, 12);
+    border-radius: 5px;
+    color: #ffc400;
+    font-size: 25px ;
+    text-decoration: none;
+    padding: 10px;
+}
+.titre-carte h2{
+    /* padding-left: 40%; */
+    margin: auto;
+    font-size: 50px;
+    color: #ffc400;
+}
+
+.plat1 .img-de-fond1 {
+    /* background-image: url(/ressources/venue_3_dark.jpg); */
+    width: 100%;
+    height: 400px;
+}
+.img-de-fond1 img, .img-de-fond2 img, .img-de-fond3 img, .img-de-fond4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.carte article{
+    width: 50%;
+}
+h3{
+    padding: 20px;
+}
+.plat1 .sec-n1 {
+    padding: 100px;
+    background-color: #8C6233;
+    color: white;
+    height: 400px;
+}
+.plat2 .img-de-fond2 {
+    width: 100%;
+    /* background-image: url(/ressources/venue_4_dark.jpg); */
+    height: 400px;
+}
+.plat2 .sec-n2 {
+    padding: 100px;
+    background-color: #8C6233;
+    color: white;
+    height: 400px;
+}
+.plat3 .img-de-fond3 {
+    /* background-image: url(/ressources/testimonal_background_dark.jpg); */
+    width: 100%;
+    height: 400px;
+}
+.plat3 .sec-n3 {
+    height: 400px;
+    padding: 100px;
+    background-color: #8C6233;
+    color: white;
+}
+.plat4 .img-de-fond4 {
+    /* background-image: url(/ressources/cover_dark.jpg); */
+    width: 100%;
+    height: 400px;
+}
+.plat4 .sec-n4 {
+    height: 400px;
+    padding: 100px;
+    color: white;
+    background-color: #8C6233;
+}
+
+#reserve{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='50' height='50' patternTransform='scale(3) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240,6.7%,17.6%,1)'/><path d='M50 25L37.5 50 25 25 37.5 0zm-25 0L12.5 50 0 25 12.5 0z'  stroke-width='1' stroke='hsla(47,80.9%,61%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+}
+#reserve h2{
+    font-family: "Rakkas", serif;
+    font-size: 50px;
+    color: #ffc400;
+    margin: 10px;
+}
+.formulaire{
+    background-color: #8C6233;
+    padding: 60px;
+    margin: 20px;
+    width: 70%;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulaire form{
+    width: 50%;
+
+}
+.formulaire input{
+    background-color: #684430;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-right: 49%;
+    height: 30px;
+}
+input:last-child{
+    margin-top: 15px;
+    background-color: #ffc400;
+    color: #684430;
+}
+label{
+    margin-left: 15px;
+}
+
+#avis{
+    background-image: url(/ressources/makereservation_dark.jpg);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.img-container{
+    width: 30%;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    border: 5px solid #ffc400;
+}
+#avis article{
+    margin: 20px ;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.tem1, .tem2, .tem3{
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 20px;
+    color: white;
+    width: 70%;
+}
+#avis h2{
+    font-family: "Rakkas", serif;
+    color: #ffc400;
+    font-size: 50px;
+    margin: 20px;
+}
+
+#contact{
+    width: 100%;
+    display: flex;
+}
+#contact .horaire{
+    width: 50%;
+}
+.img-chef{
+    width: 50%;
+
+}
+.img-chef img{
+    width: 100%;
+    height: 100%;
+}
+.horaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='50' height='50' patternTransform='scale(5) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240,6.7%,17.6%,1)'/><path d='M50 25L37.5 50 25 25 37.5 0zm-25 0L12.5 50 0 25 12.5 0z'  stroke-width='1' stroke='hsla(47,80.9%,61%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+}
+.horaire p{
+    font-family: "Vast Shadow", serif;
+    font-size: 20px;
+    color: #ffc400;
+    margin: 10px;
+}
+.horaire h2{
+    font-family: "Rakkas", serif;
+    color: #ffc400;
+    font-size: 50px;
+}
+.horaire a{
+    font-family: "Vast Shadow", serif;
+    color:#ffc400;
+}
+.horaire p:first-child{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .carte{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+.carte > *{
+    flex: 1 1;
+    /* width: calc(50% - 10px); 
+    width: 45%;
+    background-color: red;
+}
+.img-de-fond1, .img-de-fond2, .img-de-fond3, .img-de-fond4{
+    width: 50%;
+    height: 400px;
+}
+.img-de-fond1{
+    background-image: url(/ressources/venue_3_dark.jpg);
+}
+.img-de-fond2{
+    background-image: url(/ressources/venue_4_dark.jpg);
+}
+.img-de-fond3{
+    background-image: url(/ressources/cover_dark.jpg);
+}
+.img-de-fond4{
+    background-image: url(/ressources/testimonal_background_dark.jpg);
+}
+.sec-n1, .sec-n2, .sec-n3, .sec-n4{
+    display:flex;
+    justify-content: center;
+    width: 40%;
+    height: 400px;
+}
+.carte img{
+    width: 300px;
+    height: 200px;
+} */
