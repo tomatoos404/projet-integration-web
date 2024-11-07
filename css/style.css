@@ -23,6 +23,20 @@
     font-style: normal;
 }
 
+body::-webkit-scrollbar {
+    width: 17px; 
+}
+
+body::-webkit-scrollbar-track {
+    background: #ffc400;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #684430; 
+    border-radius: 20px; 
+    border: 3px solid #ffc400; 
+}
+
 body{
     width: 100%;
     margin: 0;
