@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* différentes polices  */
 .vast-shadow-regular {
     font-family: "Vast Shadow", serif;
     font-weight: 400;
@@ -22,7 +23,9 @@
     font-weight: 400;
     font-style: normal;
 }
+/* différentes police */
 
+/* la scrollbar */
 body::-webkit-scrollbar {
     width: 17px; 
 }
@@ -36,12 +39,14 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px; 
     border: 3px solid #ffc400; 
 }
+/* la scrollbar */
 
 body{
     width: 100%;
     margin: 0;
     height: 100vh;
 }
+/* header avec la video de fond */
 header{
     position: relative;
     height: 100%;
@@ -53,27 +58,6 @@ header video{
     position: absolute;
     height: 100vh;
     object-fit: cover;
-}
-header nav{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    height: 120px;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-}
-
-nav img {
-    width: 110px;
-    height: 120px;
-}
-nav a {
-    color: #ffc400;
-    font-size: 25px;
-    text-decoration: none;
 }
 header .landing{
     position: absolute;
@@ -95,6 +79,30 @@ h1{
     font-size: 25px;
     color: #ffc400;
 }
+/* fin du header avec la video de fond */
+
+/* la navigation */
+header nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    height: 120px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img {
+    width: 110px;
+    height: 120px;
+}
+nav a {
+    color: #ffc400;
+    font-size: 25px;
+    text-decoration: none;
+}
 header nav:hover{
     background-color: rgba(0, 0, 0, 0.25)
 }
@@ -108,9 +116,13 @@ nav a:hover{
     border-radius: 3px;
     box-shadow:2px 2px 2px 2px  #ffc400;
 }
+/* fin de la navigation */
+
+
 main{
     height: auto;
 }
+/* la section avec le titre de la carte */
 .titre-carte{
     display: flex;
     height: 200px;
@@ -118,10 +130,6 @@ main{
     justify-content: space-between;
     align-items:center;
     background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='50' height='50' patternTransform='scale(3) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240,6.7%,17.6%,1)'/><path d='M50 25L37.5 50 25 25 37.5 0zm-25 0L12.5 50 0 25 12.5 0z'  stroke-width='1' stroke='hsla(47,80.9%,61%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
-}
-.carte{
-    display: flex;
-    flex-wrap: wrap;
 }
 .titre-carte a {
     font-family: "Rakkas", serif;
@@ -137,6 +145,13 @@ main{
     margin: auto;
     font-size: 50px;
     color: #ffc400;
+}
+/* fin de la section avec le titre de la carte */
+
+/* la carte */
+.carte{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .plat1 .img-de-fond1 {
@@ -194,7 +209,9 @@ h3{
     color: white;
     background-color: #8C6233;
 }
+/* fin de la carte */
 
+/* la section de la réservation */
 #reserve{
     display: flex;
     justify-content: center;
@@ -239,7 +256,9 @@ input:last-child{
 label{
     margin-left: 15px;
 }
+/* fin de la section de la réservation */
 
+/* la section témoignage */
 #avis{
     background-image: url(/ressources/makereservation_dark.jpg);
     height: auto;
@@ -273,21 +292,27 @@ label{
     font-size: 50px;
     margin: 20px;
 }
+/* fin de la section témoignage */
 
+/* section contact */
+/* image du chef  */
+.img-chef{
+    width: 50%;
+    
+}
+.img-chef img{
+    width: 100%;
+    height: 100%;
+}
+/* fin de l'image du chef */
+
+/* la partie a gauche de la section contact */
 #contact{
     width: 100%;
     display: flex;
 }
 #contact .horaire{
     width: 50%;
-}
-.img-chef{
-    width: 50%;
-
-}
-.img-chef img{
-    width: 100%;
-    height: 100%;
 }
 .horaire{
     display: flex;
@@ -314,6 +339,8 @@ label{
 .horaire p:first-child{
     margin-top: 20px;
 }
+/* fin de la partie a gauche de la section contact */
+/* fin de la section contact */
 
 
 
