@@ -108,13 +108,13 @@
         <div class="formulaire">
             <form action="" method="post">
                 <label for="nom">Nom et Prénom</label>
-                <input type="text" id="nom" name="nom" placeholder="Nom & Prénom">
+                <input type="text" id="nom" name="nom" placeholder="Nom & Prénom" required pattern="[a-Z]" >
                 <label for="nombre">Nombre de personne</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre de personne">
+                <input type="text" id="nombre" name="nombre" required min="1" max="100"  placeholder="Nombre de personne">
                 <label for="heure">Heure de resérvation</label>
-                <input type="text" id="heure" name="heure" placeholder="Heure de réservation">
+                <input type="text" id="heure" name="heure" required min="0" max="100"   placeholder="Heure de réservation">
                 <label for="date">Date de resérvation</label>
-                <input type="text" id="date" name="date" placeholder="Date de réservation">
+                <input type="text" id="date" name="date" required  min="0" max="2024"  placeholder="Date de réservation">
                 <input type="submit" id="envoyer" name="envoyer">
             </form>
         </div>
