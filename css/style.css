@@ -142,8 +142,8 @@ main{
     padding: 10px;
 }
 .titre-carte h2{
-    /* padding-left: 40%; */
-    margin: auto;
+    padding-left: 41%;
+    /* margin: auto; */
     font-size: 50px;
     color: #ffc400;
 }
@@ -242,20 +242,24 @@ h3{
 
 }
 .formulaire input{
-    background-color: #684430;
+    background-color: #ffc400;
     border: none;
     border-radius: 5px;
     width: 100%;
     margin-right: 49%;
     height: 30px;
 }
-input:last-child{
-    margin-top: 15px;
+#envoyer{
+    /* margin-top: 15px; */
     background-color: #ffc400;
     color: #684430;
 }
 label{
-    margin-left: 10px;
+    color: #fff;
+    margin-left: 5px;
+}
+.input{
+    padding: 10px 0px;
 }
 /* fin de la section de la réservation */
 

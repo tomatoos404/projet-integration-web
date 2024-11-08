@@ -107,16 +107,26 @@
         <h2>Reservation</h2>
         <div class="formulaire">
             <form action="" method="post">
-                <label for="nom">Nom et Prénom</label>
-                <input type="text" id="nom" name="nom" placeholder="Nom & Prénom" required pattern="[a-Z]" >
-                <label for="nombre">Nombre de personnes</label>
-                <input type="text" id="nombre" name="nombre" required min="1" max="100"  placeholder="Nombre de personnes">
-                <label for="heure">Heure de réservation</label>
-                <input type="text" id="heure" name="heure" required min="0" max="100"   placeholder="Heure de réservation">
-                <label for="date">Date de réservation</label>
-                <input type="text" id="date" name="date" required  min="0" max="2024"  placeholder="Date de réservation">
-                <label for="num">Votre Numéro</label>
-                <input type="text" id="num" name="num" required placeholder="06 45 78 36 55 ">
+                <div class="input">
+                    <label for="nom">Nom et Prénom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom & Prénom" required pattern="[a-Z]" >
+                </div>
+                <div class="input">
+                    <label for="nombre">Nombre de personnes</label>
+                    <input type="text" id="nombre" name="nombre" required min="1" max="100"  placeholder="Nombre de personnes">
+                </div>
+                <div class="input">
+                    <label for="heure">Heure de réservation</label>
+                    <input type="text" id="heure" name="heure" required min="0" max="100"   placeholder="Heure de réservation">
+                </div>
+                <div class="input">
+                    <label for="date">Date de réservation</label>
+                    <input type="text" id="date" name="date" required  min="0" max="2024"  placeholder="Date de réservation">
+                </div>
+                <div class="input">
+                    <label for="num">Votre Numéro</label>
+                    <input type="text" id="num" name="num" required placeholder="06 45 78 36 55 ">
+                </div>
                 <input type="submit" id="envoyer" name="envoyer">
             </form>
         </div>
