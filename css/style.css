@@ -265,7 +265,7 @@ label{
 
 /* la section témoignage */
 #avis{
-    background-image: url(/ressources/makereservation_dark.jpg);
+    background-image: url("./ressources/makereservation_dark.jpg");
     height: auto;
     display: flex;
     flex-wrap: wrap;
